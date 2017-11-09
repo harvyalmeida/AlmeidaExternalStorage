@@ -48,7 +48,7 @@
         android:onClick="saveExternalStorage"/>
 
     <Button
-        android:id="@+id/btnEP"
+        android:id="@+id/btnEPS"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="External Public Storage"
