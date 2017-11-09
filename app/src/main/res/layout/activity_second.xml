@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.harvy.almeidaexternalstorage.SecondActivity">
+
+    <Button
+        android:id="@+id/btnSP"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Shared Preferences"
+        android:layout_below="@+id/tvFilename"
+        android:layout_marginTop="50dp"
+        android:onClick="saveSharedPreferences"/>
+
+    <Button
+        android:id="@+id/btnIS"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Internal Storage"
+        android:layout_below="@+id/btnSP"
+        android:onClick="saveInternalStorage"/>
+
+    <Button
+        android:id="@+id/btnIC"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Internal Cache"
+        android:layout_below="@+id/btnIS"
+        android:onClick="saveInternalCache"/>
+
+    <Button
+        android:id="@+id/btnEC"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="External Cache"
+        android:layout_below="@+id/btnIC"
+        android:onClick="saveExternalCache"/>
+
+    <Button
+        android:id="@+id/btnES"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="External Storage"
+        android:layout_below="@+id/btnEC"
+        android:onClick="saveExternalStorage"/>
+
+    <Button
+        android:id="@+id/btnEP"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="External Public Storage"
+        android:layout_below="@+id/btnES"
+        android:onClick="saveExternalPublic"/>
+
+    <Button
+        android:id="@+id/btnPrevious"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Previous"
+        android:layout_below="@+id/btnEP"
+        android:onClick="previous"/>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnPrevious"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="51dp" />
+
+
+</RelativeLayout>
